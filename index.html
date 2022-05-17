@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/01cadf6657.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        Header nav {
+            width: 100%;
+            padding: 16px 78px;
+            background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            border-bottom: 20px;
+            justify-content: space-evenly;
+        }
+        
+        .logo {
+            width: 140px;
+            size: 30px;
+            color: gold;
+            font-weight: 1000;
+            font-style: raleway, sans-serif;
+            font-size: 32px;
+        }
+        
+        .Logo_Stories_Text {
+            margin: 0;
+            font-weight: 500px;
+            font-style: raleway, serif;
+            font-style: Italic;
+        }
+        
+        .dropbtn {
+            color: #000;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        button {
+            height: 40px;
+            width: 160px;
+            margin: 10px;
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            border-radius: 25px;
+            border-radius: 10px solid black;
+            background-color: gold;
+            float: right;
+        }
+        
+        button a {
+            color: black;
+        }
+        
+        button a:hover {
+            color: green;
+        }
+        
+        i {
+            margin: 10px;
+            padding: 2px;
+        }
+        
+        #icon2 {
+            color: blue;
+        }
+        
+        #icon2 :hover {
+            color: skyblue;
+        }
+        
+        .li {
+            text-emphasis: none;
+            list-style: none;
+        }
+        
+        body {
+            background-color: lemonchiffon;
+        }
+        
+        .Heading {
+            color: #000;
+            font-weight: 600;
+            margin: 0;
+            size: 30px;
+        }
+        
+        .Categories_container {
+            size: 16px;
+            padding-top: 16px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        
+        .Categories {
+            padding: 6px 14px;
+            width: auto;
+            color: rgb(81, 69, 4);
+            border-radius: 15px;
+            Border: 1px solid black;
+            margin: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .Categories a {
+            color: orange;
+            text-decoration: none;
+        }
+        
+        .Categories:hover {
+            color: black;
+            background-color: white;
+        }
+        
+        .Categories a:active {
+            color: black;
+            background-color: white;
+            ;
+        }
+        
+        .Categories a:hover {
+            color: black;
+            /* padding: 6px 14px; */
+            width: auto;
+            font-weight: bold;
+            background-color: white;
+        }
+        
+        */ .filter_ text {
+            size: 14px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+        
+        .main {
+            width: 80%;
+            padding: 2px;
+            margin: 2px;
+            float: center;
+        }
+        /* .footer {
+background-color: #172146;
+padding: 80px 16;
+display: block;
+color: #fff;
+}
+
+.footer p a {
+float: right;
+color: #fff;
+padding: 80px 16;
+}
+
+footer .h4 {
+float: left;
+}
+
+
+} */
+        
+        .container {
+            display: none;
+            width: 100%;
+            display: flex;
+        }
+        
+        .Item {
+            width: 32.3%;
+            box-shadow: 2px 2px 5px 5px rgb(161, 152, 152);
+            /*@media (min-width: 26%);
+            */
+            margin: 10px;
+            /* display: inline-block; */
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        
+        .image_section {
+            height: 176px;
+            width: 100%;
+        }
+        
+        .image_section img {
+            width: 100%;
+            height: 100%;
+            border top left radius: 5px solid blue;
+            border top right radius: 5px solid;
+        }
+        
+        .text_Section {
+            padding: 10px 24px;
+            text size: 14px;
+            text weight: 400;
+            line height: 1.43;
+            color: rgba(0, 0, 0, 6);
+            margin: 4px 0;
+        }
+        
+        .title {
+            font size: 18px;
+            text alignment: left;
+            Margin: 20px;
+            font weight: 600px;
+            font-weight: bold;
+        }
+        
+        .Date {
+            color: rgba ( 0, 0, 0, 7);
+            text size: 14px;
+            font weight: 300;
+            display: inline;
+        }
+        
+        .author {
+            color: #0096ff;
+            text-size: 14px;
+            text style: italic;
+            text weight: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            display: inline;
+        }
+        
+        .Author_container {
+            padding-top: 4px;
+            text size: 14px;
+            font weight: 400px;
+            line height: 1.43;
+            color: rgba(0, 0, 0, 6);
+            margin: 4px 0;
+            display: inline;
+        }
+        
+        .text_section {
+            padding: 10px 24px;
+            text size: 14px;
+            text weight: 400;
+            line height: 1.43;
+            color: rgba(0, 0, 0, , 6);
+            margin: 4px 0;
+        }
+        
+        .footer {
+            width: 100%;
+            background-color: #172146;
+            padding: 80px 16;
+            display: flex;
+            flex-wrap: wrap;
+            color: #fff;
+            margin: 2px 2px;
+            align: center;
+            justify-content: space-evenly;
+            padding: 20px 20px 20px 20px;
+        }
+        
+        footer {
+            width: 100%;
+            background-color: #172146;
+            padding: 80px 16;
+            display: flex;
+            flex-wrap: wrap;
+            color: #fff;
+            margin: 2px 2px;
+            align: center;
+            justify-content: space-evenly;
+            padding: 20px 20px 20px 20px;
+        }
+        
+        .f1 {
+            float: left;
+        }
+        /* .f2 {
+float: right;
+} */
+        
+        @media only screen and (min-width: 400px) {
+            body>div {
+                width: 10%;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: column;
+            }
+            .Item {
+                width: 40%;
+                background-color: rgb(235, 247, 250);
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+        .footer>.f2 {
+            float: right;
+            color: #fff;
+            padding: 80px 36;
+        }
+        
+        main {
+            /* background-color: black;
+    margin-left: 20px;
+    margin-right: 20px; */
+            display: inline-block;
+            width: 1600px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            margin-left: 0px;
+            margin-top: 30px;
+            margin-right: 10px;
+            width: 100%;
+            justify-content: center;
+            background-color: beige;
+        }
+        
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        /* The container <div> - needed to position the dropdown content */
+        
+        .dropdown {
+            height: 10%;
+            width: 15%;
+            /*position: relative;
+  display: inline-block;*/
+        }
+        /* Dropdown Content (Hidden by Default) */
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        /* Links inside the dropdown */
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        /* Change color of dropdown links on hover */
+        
+        .dropdown-content a:hover {
+            background-color: #efb7b7
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+        
+        .container :hover {
+            background-color: white;
+        }
+        
+        .test {
+            float: right;
+            margin-top:
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/01cadf6657.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+
+            <div>
+                <!--{% comment %} <img src="data:image/png;base64,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"/>
+                -->
+                <div class="logo"> BcaStudyBuddy</div>
+                <div class="Logo_Stories_Text">Learn & practice here<span color="#FFFFFF">A BCA Study Preparation Guide</span></div>
+            </div>
+            <div class="dropdown">
+                <div class="dropbtn">Explore Categories<i class="fa-solid fa-circle-chevron-down"></i>
+                    <div class="dropdown-content">
+                        <!-- <a href="#">Learn for free</a> -->
+                        <!-- <a href="#">HTML</a>
+                        <a href="css.html">CSS</a> -->
+                        <a href="http://localhost/BcaStudyBuddy/account.php?q=1">Take Quiz</a>
+                        <a href="https://youtu.be/BsDoLVMnmZs">video tutorial HTML</a>
+                        <a href="https://youtu.be/BsDoLVMnmZs">video tutorial CSS</a>
+                        <a href="https://www.youtube.com/vLnPwxZdW4Y ">video tutorial C++</a>
+                        <a href="https://youtu.be/rfscVS0vtbw ">video tutorial PYTHON</a>
+                        <a href="https://www.youtube.com/mXjZQX3UzOs">video tutorial ANDROID</a>
+                        <a href="https://www.youtube.com/GhQdlIFylQ8 ">video tutorial C#</a>
+
+                        <a href="http://localhost/BcaStudyBuddy/index.php">SignUp</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <Button>
+                    <a href="http://localhost/BcaStudyBuddy/index.php">
+                    SignUp!
+                    </a>
+                </button>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <main class="main">
+            <!-- <div class="Heading">Trending Posts</div> -->
+            <div class="filter_text"><i class="fa-solid fa-filter" id="icon2"></i>Filter by Category</div>
+
+            <div class="Categories_container">
+                <div class="Categories">
+                    <a href="#">Official document link</a>
+                </div>
+
+                <div class="Categories"><a href="https://developer.mozilla.org/en-US/">HTML</a></div>
+                <div class="Categories"><a href="https://developer.mozilla.org/en-US/docs/Web/JAVASCRIPT">CSS</a></div>
+                <div class="Categories"><a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170">C++</a></div>
+                <div class="Categories"><a href="https://docs.python.org/3/">Python</a></div>
+                <div class="Categories"><a href="https://developer.android.com/docs">Android</a>
+                </div>
+                <div class="Categories"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C#</a></div>
+                <!-- <div class="Categories"><a href="#">Get a job in tech company</a></div>
+                <div class="Categories"><a href="#">others</a></div> -->
+            </div>
+
+            <br><br><br>
+            <div class="container">
+                <div class="Item">
+                    <div class="image_section">
+                        <img src="https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+                    </div>
+                    <div class="title">HTML</div>
+                    <div class="text_Section">
+                        <div class="Author_container">
+
+                            <div class="author"> <a href="html.html">Learn </a></div>
+                            <span class="test"><a href="http://localhost/BcaStudyBuddy/account.php?q=1">Give test </a></span>
+
+                            <p> HTML is the standard markup language for Web pages. With HTML you can create your own Website.
+                            </p>
+                            <h5> Official document
+                                <a href="https://developer.mozilla.org/en-US/">Click here</a>
+                            </h5><br>
+                            <h5>Study from w3school
+                                <a href="https://www.w3schools.com/html/">Click here</a>
+                            </h5>
+                            <iframe width="280" height="150" src=" https://www.youtube.com/embed/BsDoLVMnmZs" frameborder="0 " allowfullscreen></iframe>
+                            </iframe>
+                            <h5>Video tutorial link from Codewith harry</h5> <a href="https://youtu.be/BsDoLVMnmZs">click here</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="Item">
+                    <div class="image_section ">
+                        <img src="https://cdn.mos.cms.futurecdn.net/Vp9WvV7YKdH4k8sKRePcE8.jpg " />
+                    </div>
+                    <div class="title ">Design your website with CSS</div>
+                    <div class="text_Section ">
+                        <div class="Author_container ">
+
+                            <div class="author ">Learn</div>
+                            <span class="test "> <a href="http://localhost/BcaStudyBuddy/account.php?q=1">Give test</a></span>
+                            </span>
+                            <p>CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed.</p>
+                            <br/><br/>
+                            <h5> Official document
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JAVASCRIPT">Click here</a>
+                            </h5><br>
+                            <h5>Study from w3school
+                                <a href="https://www.w3schools.com/javascript/">Click here</a>
+                            </h5>
+                            <iframe width="280" height="150" src=" https://www.youtube.com/embed/Edsxf_NBFrw " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                            <h5>Video tutorial link from Codewith harry</h5><a href="https://youtu.be/BsDoLVMnmZs ">click here</a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+                <!-- <div class="Item ">
+                    <div class="image_section">
+                        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/titleShadow-1024x341.png" />
+                    </div>
+                    <div class="title ">JavaScript: the most popular language</div>
+                    <div class="text_Section ">
+                        <div class="Author_container ">
+
+                            <div class="author "> Learn </div>
+                            <span class="test ">Give test </span>
+                            <p>It helps in optimizing the resources. It supports the multiplayer option with networking. uses of C++ allows procedural programming for intensive functions of CPU and to provide control over hardware</p>
+
+                            <h5> Official document
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS ">Click here</a>
+                            </h5><br>
+                            <h5>Study from w3school
+                                <a href="https://www.w3schools.com/javascript/ ">Click here</a>
+                            </h5>
+                            <iframe width="280 " height="150 " src="https://www.youtube.com/embed/jS4aFq5-91M " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                            <a href="https://youtu.be/jS4aFq5-91M ">click here</a>
+
+
+                        </div>
+                    </div>
+                </div> -->
+                <div class="Item ">
+                    <div class="image_section ">
+                        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/titleShadow-1024x341.png " />
+                    </div>
+                    <div class="title ">C++ foundation Of Programming </div>
+                    <div class="text_Section ">
+                        <div class="Author_container ">
+
+                            <div class="author "> Learn </div>
+                            <span class="test "><a href="http://localhost/BcaStudyBuddy/account.php?q=quiz&step=2&eid=626912448a927&n=1&t=10">Give test</a> </span>
+                            <p>It helps in optimizing the resources. It supports the multiplayer option with networking. uses of C++ allows procedural programming for intensive functions of CPU and to provide control over hardware</p>
+
+                            <h5>Recommended document
+                                <a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170 ">Click here</a>
+                            </h5><br>
+                            <h5>Study from Programiz
+                                <a href="https://www.programiz.com/cpp-programming">Click here</a>
+                            </h5>
+                            <iframe width="280 " height="150 " src="https://www.youtube.com/embed/vLnPwxZdW4Y " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture
+                                " allowfullscreen></iframe>
+                            <h5>Video tutorial link from FreeCodeCamp</h5>
+                            <a href="https://www.youtube.com/embed/vLnPwxZdW4Y ">click here</a>
+
+
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class=" Item ">
+                    <div class="image_section ">
+                        <img src="data:image/jpeg;base64,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"
+                        />
+                    </div>
+                    <div class=" title ">Python </div>
+                    <div class="text_Section ">
+                        <div class="Author_container ">
+                            <div class="author "> Learn</div>
+                            <span class="test "><a href="http://localhost/BcaStudyBuddy/account.php?q=1">Give Test</a> </span>
+                            <p>Python has become a staple in data science, allowing data analysts and other professionals to use the language to conduct complex statistical calculations, create data visualizations, build machine learning algorithms, manipulate
+                                and analyze data, and complete other data-related tasks</p>
+
+                            <h5> Official document
+                                <a href="https://docs.python.org/3/ ">Click here</a>
+                            </h5><br>
+                            <h5>Study from w3school
+                                <a href="https://www.w3schools.com/python/ ">Click here</a>
+                            </h5>
+                            <iframe width="280 " height="150 " src="https://www.youtube.com/embed/rfscVS0vtbw " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                            <h5>Video tutorial link FreeCodeCamp</h5><a href="https://youtu.be/rfscVS0vtbw ">click here</a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <br><br>
+                <div class="Item ">
+                    <div class="image_section ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7KN28Mr80fXbMc-Xlv1CvckPWRknwOBkrrw&usqp=CAU " />
+
+                    </div>
+                    <div class="title ">Android Programming </div>
+                    <div class="text_Section ">
+                        <div class="Author_container ">
+                            <div class="author ">Learn</div>
+                            <span class="test "><a href="http://localhost/BcaStudyBuddy/account.php?q=1">Give test</a></span>
+
+
+                            <p>Android App Development, we will learn how to make beautiful android applications from scratch .This will teach you how to make Android apps that sell from scratch. We will learn to make apps and publish them to playstore</p>
+
+                            <h5>Official document
+                                <a href="https://developer.android.com/docs ">Click here</a>
+                            </h5><br>
+                            <h5>Study from javaTpoint Only
+                                <a href="https://www.javatpoint.com/android-tutorial ">Click here</a>
+                            </h5>
+                            <iframe width="280 " height="150 " src="https://www.youtube.com/embed/mXjZQX3UzOs " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                            <h5>Video tutorial link from Codewith harry</h5><a href="https://youtu.be/rxN8Iuo28oQ">click here</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div class="Item ">
+                    <div class="image_section ">
+                        <img src="data:image/png;base64,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 "
+                        />
+                    </div>
+                    <div class="title ">C# Programming</div>
+                    <div class="text_Section ">
+                        <div class="Author_container ">
+                            <div class="author ">Learn</div>
+                            <span class="test "><a href="http://localhost/BcaStudyBuddy/account.php?q=1">Give test</a>
+                            </span>
+
+                            <p>C# can be used to create almost anything but is particularly strong at building Windows desktop applications and games. C# can also be used to develop web applications and has become increasingly popular </p>
+
+                            <h5> Official document
+                                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj4nK-_hdr3AhWHmFYBHQwkBwYQFnoECBMQAQ&url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdotnet%2Fcsharp%2F&usg=AOvVaw0_5AuQQy8Q-Ilx7q4E9pB2 ">Click here</a>
+                            </h5><br>
+                            <h5>Study from w3school
+                                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiJw56di9r3AhWEUGwGHZt5ApQQFnoECAcQAQ&url=https%3A%2F%2Fwww.w3schools.com%2Fcs%2Findex.php&usg=AOvVaw0g970e_ZH6tP7rjWmaVEd8 ">Click here</a>
+                            </h5>
+
+                            <iframe width="280 " height="150 " src="https://www.youtube.com/embed/GhQdlIFylQ8 " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                            <h5>Video tutorial link from FreeCodeCamp</h5><a href="https://youtu.be/url?sa=t&rct=j&q=&esrc=s&source=video&cd=&cad=rja&uact=8&ved=2ahUKEwiO9Yy7i9r3AhXDT2wGHSupAhoQtwJ6BAgSEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DGhQdlIFylQ8&usg=AOvVaw2T8tiUuA1QMi9nmEU6gk5_ ">click here</a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+            </div>
+
+
+
+
+
+
+
+
+            <br><br>
+
+        </main>
+        <footer>
+            <div class="footer ">
+                <div class="f1 ">
+                    <h1 style="color:rgb(240, 206, 37) "> BcaStudyBuddy</h1>
+                    <span style="color:skyblue ">A BCA Study Preparation Guide</span>
+                </div>
+            </div>
+
+            <!-- <h3> Counter Section using HTML and CSS </h3>-->
+            <!-- <p> Hello, Welcome to our Website! </p> -->
+            <!-- <p> Look at the counter section above, which basically shows the growth of the business. </p> -->
+
+            <!-- <div class="row ">
+                    <div class="column ">
+                        <div class="block ">
+                             Add user icon to the counter 
+            <p><i class="fa fa-user "></i></p>
+            <h3> 65+ </h3>
+            <p> Projects </p>
+            </div>
+            </div>
+
+            <div class="column ">
+                <div class="block ">
+                    Add book icon to the counter
+                    <p><i class="fa fa-book "></i></p>
+                    <h3> 75k+ </h3>
+                    <p> Articles </p>
+                </div>
+            </div>
+
+            <div class="column ">
+                <div class="block ">
+                     Add smilie icon to the counter 
+                <p><i class="fa fa-smile-o "></i></p>
+                <h3> 150+ </h3>
+                <p> Happy Clients </p>
+            </div>
+            </div>
+
+            <div class="column ">
+                <div class="block ">
+                  Add coffee cup icon to the counter 
+                <p><i class="fa fa-coffee "></i></p>
+                <h3> 100+ </h3>
+                <p> Meetings </p>
+            </div>
+            </div>
+            </div>
+            <div class="f2 "><a href="index.html " target="blank ">wwwBcaPreparation.com </a>
+            </div> -->
+            <!-- </div> -->
+
+        </footer>
+        <script src=" " async defer></script>
+</body>
+
+</html>
